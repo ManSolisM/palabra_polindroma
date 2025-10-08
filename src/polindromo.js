@@ -1,4 +1,4 @@
-import Swal from "sweetalert2";
+
 
 class Polindromo {
     #palabra;
@@ -14,7 +14,7 @@ class Polindromo {
         container.className = 'polindromo-container';
         container.innerHTML = `
             <div class="polindromo-card">
-                <h1> Verificador de Palíndromos</h1>
+                <h1>🔄 Verificador de Palíndromos</h1>
                 
                 <div class="input-group">
                     <label for="textInput">Ingresa una palabra o frase:</label>
