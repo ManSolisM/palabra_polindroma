@@ -5,29 +5,6 @@ class Polindromo {
 
     constructor() {
         this.#palabra = '';
-        this.inicializar();
-    }
-
-    inicializar() {
-        // Crear el contenedor HTML
-        const container = document.createElement('div');
-        container.className = 'polindromo-container';
-        container.innerHTML = `
-            <div class="polindromo-card">
-                <h1>Verificador de Palíndromos</h1>
-                
-                <div class="input-group">
-                    <label for="textInput">Ingresa una palabra o frase:</label>
-                    <input type="text" id="textInput" placeholder="Ejemplo: Oso, Ana, Anita lava la tina...">
-                </div>
-                
-                <button id="verificarBtn">Verificar</button>
-            </div>
-        `;
-
-        document.body.appendChild(container);
-
-        // Agregar eventos
         this.agregarEventos();
     }
 
