@@ -5,6 +5,7 @@ class Polindromo {
 
     constructor() {
         this.#palabra = '';
+<<<<<<< HEAD
         this.inicializar();
     }
 
@@ -31,6 +32,8 @@ class Polindromo {
         this.agregarEstilos();
 
         // Agregar eventos
+=======
+>>>>>>> 8f775196b40277511269dcfb6c240a0d9cd7f961
         this.agregarEventos();
     }
 
