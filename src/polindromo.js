@@ -5,7 +5,6 @@ class Polindromo {
 
     constructor() {
         this.#palabra = '';
-<<<<<<< HEAD
         this.inicializar();
     }
 
@@ -32,8 +31,6 @@ class Polindromo {
         this.agregarEstilos();
 
         // Agregar eventos
-=======
->>>>>>> 8f775196b40277511269dcfb6c240a0d9cd7f961
         this.agregarEventos();
     }
 
@@ -92,7 +89,7 @@ class Polindromo {
             .polindromo-card button {
                 width: 100%;
                 padding: 15px;
-                background: #7817b0ff;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
                 color: white;
                 border: none;
                 border-radius: 10px;
@@ -149,7 +146,7 @@ class Polindromo {
                 icon: 'warning',
                 title: '⚠️ Atención',
                 text: 'Por favor ingresa una palabra o frase',
-                confirmButtonColor: '#c7790bff'
+                confirmButtonColor: '#667eea'
             });
             return;
         }
@@ -159,14 +156,14 @@ class Polindromo {
                 icon: 'success',
                 title: '✅ ¡Sí es un palíndromo!',
                 text: `"${this.#palabra}" se lee igual al derecho y al revés`,
-                confirmButtonColor: '#078d0bff'
+                confirmButtonColor: '#667eea'
             });
         } else {
             Swal.fire({
                 icon: 'error',
-                title: '❌ No es un palíndromo, intenta de nuevo',
+                title: '❌ No es un palíndromo',
                 text: `"${this.#palabra}" no se lee igual al derecho y al revés`,
-                confirmButtonColor: '#be1313ff'
+                confirmButtonColor: '#667eea'
             });
         }
     }
