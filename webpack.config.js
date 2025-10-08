@@ -4,7 +4,7 @@ module.exports = {
   mode: 'development', // Modo desarrollo
   entry: './src/index.js', // Archivo de entrada
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'Dist'),
     filename: 'bundle.js', // Archivo de salida
   },
   devServer: {
